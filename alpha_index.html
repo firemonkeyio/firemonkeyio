@@ -1,0 +1,241 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>FireMonkey.io - Teenagers Learning HTML, CSS &amp; JavaScript in the Cloud.</title>
+  <meta name="description" content="FireMonkey.io has extensive tutorials and resources for teenagers learning the latest web development skills online.">
+  <meta name="author" content="Chris Jacob">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references 
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  -->
+
+  <!-- CSS: implied media="all" -->
+  <link rel="stylesheet" href="stylesheets/css/basic.css">
+
+  <script src="javascripts/libs/enhance.min.js"></script>
+  
+  <script>
+    enhance({
+    	loadStyles: [
+  			{ href: 'stylesheets/css/enhanced.css' }
+  		],	
+  		loadScripts: [
+        // Modernizr enables HTML5 elements & feature detects
+        { src: 'javascripts/libs/modernizr-1.7.min.js' },
+        // Grab Google CDN's jQuery, with a protocol relative URL
+        { src: '//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js' },
+  			// { src: 'javascripts/libs/jquery-1.5.1.min.js' },
+  			{ src: 'javascripts/libs/jquery.mediahelpers.min.js' },
+    		{ src: 'javascripts/libs/jQuery.collapsible.js' },
+    		{ src: 'javascripts/plugins.js' },
+    		{ src: 'javascripts/script.js' },
+        { src: 'javascripts/libs/dd_belatedpng.js', iecondition: 'lt IE 7' },
+        { src: 'javascripts/dd_belatedpng_call.js', iecondition: 'lt IE 7' }
+  		],
+      onScriptsLoaded : function(){
+        // run after all scripts loaded 
+      },
+      appendToggleLink: true
+    });   
+  </script>
+  <!-- All other JavaScript at the bottom -->
+
+</head>
+
+<body>
+
+  <!-- http://perishablepress.com/press/2008/03/19/cssxhtml-tutorial-hovering-accessibility-jump-menu/ -->
+  <ol id="jump" role="heading">
+    <li><a href="#top"        accesskey="1" rel="nofollow" title="AccessKey[1]: Jump to jump menu" id="top">Jump Menu</a></li>
+    <li><a href="#menu"       accesskey="2" rel="nofollow" title="AccessKey[2]: Jump to main menu">Main Menu</a></li>
+    <li><a href="#breadcrumb" accesskey="3" rel="nofollow" title="AccessKey[3]: Jump to breadcrumb menu">Breadcrumb Menu</a></li>
+    <li><a href="#search"     accesskey="4" rel="nofollow" title="AccessKey[4]: Jump to search">Search</a></li>
+    <li><a href="#content"    accesskey="5" rel="nofollow" title="AccessKey[5]: Jump to main content">Content</a></li>
+    <li><a href="#comments"   accesskey="6" rel="nofollow" title="AccessKey[6]: Jump to comments">Comments</a></li>
+    <li><a href="#sidebar"    accesskey="7" rel="nofollow" title="AccessKey[7]: Jump to sidebar">Sidebar</a></li>
+    <li><a href="#footer"     accesskey="8" rel="nofollow" title="AccessKey[8]: Jump to footer">Footer</a></li>
+    <li><a href="#settings"   accesskey="9" rel="nofollow" title="AccessKey[9]: Jump to settings">Settings</a></li>
+  </ol>
+
+  <div id="container">
+    <header>
+      <h1>
+        <a href="http://chrisjacob.github.com/firemonkeyio/">
+          <span id="logo">FireMonkey.io</span> - 
+          <span id="tagline">Teenagers Learning HTML, CSS &amp; JavaScript in the Cloud.</span>
+        </a>
+      </h1>
+      <p>
+        FireMonkey.io has extensive tutorials and resources for teenagers learning the latest web development skills online. 
+      </p>
+      
+      <h2 class="js_collapsible">Search</h2>
+      <div id="search">
+        <form id="form_search" action="" method="get">
+          <input type="search" name="search" placeholder="Search" value="" />
+          <button type="submit">Go</button>
+        </form>
+      </div>
+    </header>
+    
+    <section id="ajax_content">
+      <h2 class="js_collapsible">Breadcrumb</h2>
+      <nav id="breadcrumb">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li><a href="/tutorials">Tutorials</a></li>
+          <li><a href="/tutorials/html">HTML</a></li>
+          <li><a href="/tutorials/html/beginner">Beginner</a></li>
+        </ol>
+      </nav>
+        
+      <h2 class="js_collapsible">Content</h2>
+      <article id="content" role="main">
+        <header>
+          <h1>
+            Basic Page Layout
+          </h1>
+          <p>
+            Published: <time pubdate="pubdate">2011-04-01</time>
+          </p>
+        </header>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat pulvinar justo at tempor. Nullam a lacus nunc, in placerat nisi. Morbi porttitor enim id velit bibendum sagittis. Vestibulum dapibus bibendum massa vitae hendrerit. Proin vitae leo in ligula sagittis tincidunt.
+        </p>
+        <p>
+          Vestibulum dapibus bibendum massa vitae hendrerit. Proin vitae leo in ligula sagittis tincidunt.
+        </p>
+        <footer>
+          <p>
+            <small>Creative Commons Attribution-ShareAlike License</small>
+          </p>
+        </footer>
+        
+        <h3 class="js_collapsible">Comments</h3>
+        <section id="comments">
+          <article>
+            <header>
+              <h3>Posted by: Apple Lover</h3>
+              <p><time pubdate datetime="2009-10-10T19:10-08:00">~1 hour ago</time></p>
+            </header>
+            <p>I love apples, my favourite kind are Granny Smiths</p>
+          </article>
+          <article>
+            <header>
+              <h3>Posted by: Oranges are king</h3>
+              <p><time pubdate datetime="2009-10-10T19:15-08:00">~1 hour ago</time></p>
+            </header>
+            <p>Urgh, apples!? you should write about ORANGES instead!!1!</p>
+          </article>
+        </section>
+      </article>
+
+      <h2 class="js_collapsible">Sidebar</h2>
+      <aside id="sidebar">
+        <h3 class="js_collapsible">Meta</h3>
+        <div id="meta">
+          This tutorial was written by...
+        </div>
+        
+        <h3 class="js_collapsible">Tags</h3>
+        <div id="tags">
+          <ul>
+            <li><a href="/tags/tag-1">Tag 1</a></li>
+            <li><a href="/tags/tag-2">Tag 2</a></li>
+            <li><a href="/tags/tag-3">Tag 3</a></li>
+            <li><a href="/tags/tag-4">Tag 4</a></li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <h2 class="js_collapsible">Menu</h2>
+    <nav id="menu">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li class="history"><a href="/tutorials">Tutorials</a>
+          <ol>
+            <li class="history"><a href="/tutorials/html">HTML</a>
+              <ol>
+                <li class="history"><a href="/tutorials/html/beginner">Beginner</a>
+                  <ol>
+                    <li><a href="/tutorials/html/beginner/structural-tags">Structural Tags</a></li>
+                    <li class="active"><a href="/tutorials/html/beginner/basic-page-layout">Basic Page Layout</a></li>
+                    <li><a href="/tutorials/html/beginner/hyperlinks-and-anchor-links">Hyperlinks and Anchor Links</a></li>
+                  </ol>
+                </li>
+                <li><a href="/tutorials/html/intermediate">Intermediate</a></li>
+                <li><a href="/tutorials/html/advanced">Advanced</a></li>
+              </ol>
+            </li>
+            <li><a href="/tutorials/css">CSS</a></li>
+            <li><a href="/tutorials/javascript">JavaScript</a></li>
+            <li><a href="/tutorials/toolbox">Toolbox</a></li>
+          </ol>
+        </li>
+        <li><a href="/html-reference">HTML Reference</a></li>
+        <li><a href="/css-reference">CSS Reference</a></li>
+        <li><a href="/javascript-reference">Javascript Reference</a></li>
+        <li><a href="/cheatsheets">Cheatsheets</a>
+          <ol>
+            <li><a href="/cheatsheets/html">HTML</a></li>
+            <li><a href="/cheatsheets/css">CSS</a></li>
+            <li><a href="/cheatsheets/javascript">JavaScript</a></li>
+            <li><a href="/cheatsheets/firebug">Firebug</a></li>
+          </ol>
+        </li>
+        <li><a href="/blog">Blog</a></li>
+      </ol>
+    </nav>
+    
+    <h2 class="js_collapsible">Footer</h2>
+    <footer id="footer">
+      <h3 class="js_collapsible">Settings</h3>
+      <div id="settings">
+        <ul>
+          <li><a href="#128"  title="Mobile (older)">128px</a></li>
+          <li><a href="#176"  title="Mobile (old)">176px</a></li>
+          <li><a href="#240"  title="Mobile">240px</a></li>
+          <li><a href="#320"  title="iPhone (portrait)">320px</a></li>
+          <li><a href="#480"  title="iPhone (landscape)">480px</a></li>
+          <li><a href="#768"  title="iPad (portrait)">768px</a></li>            
+          <li><a href="#1024" title="iPad (landscape)">1024px</a></li>
+          <li><a href="#1280" title="Netbook">1280px</a></li>
+          <li><a href="#1440" title="Laptop">1440px</a></li>
+          <li><a href="#1920" title="Desktop">1920px</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write("<script src='javascripts/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
+  -->
+
+  <!-- mathiasbynens.be/notes/async-analytics-snippet -->
+  <script>
+    var _gaq=[["_setAccount","UA-20780533-2"],["_trackPageview"]];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+    s.parentNode.insertBefore(g,s)}(document,"script"));
+  </script>
+
+</body>
+</html>

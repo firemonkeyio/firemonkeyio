@@ -1,0 +1,19 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Founder: Chris Jacob
+  Site: http://about.me/chrisjacob
+  Twitter: @_chrisjacob
+  Location: Coffs Harbour, NSW, Australia
+
+/* THANKS */
+  Paul Irish (http://paulirish.com/)
+		- HTML5 Boilerplate (https://github.com/paulirish/html5-boilerplate)
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery
+  Services: GitHub, Cloud9 IDE
+  
