@@ -37,9 +37,9 @@ page.url: {{ page.url }}
 
 <footer>
     <ul>
-    {% for item in site %}
-        <li>K: {{ item.key }}, V:{{ item.value }}..... {{ forloop.index }}: {{ forloop.name }}</li>
-    {% endfor %}
+        <li>site.url: {{ site.url }}</li>
+        <li>page.url: {{ page.url }}</li>
+        <li>post.url: {{ post.url }}</li>
     </ul>
 </footer>
 
