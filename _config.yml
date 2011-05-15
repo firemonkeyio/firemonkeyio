@@ -1,0 +1,47 @@
+# Jekyll Configuration Settings
+# https://github.com/mojombo/jekyll/wiki/Configuration
+
+safe: true                      # Default: "false"      | GitHub Pages: "true"
+auto: true                      # Default: "false"      | Regeneration: Enables or disables Jekyll from recreating the site when files are modified. 
+server: false                   # Default: "false"      | Local Server: Fires up a server that will host your _site directory 
+server_port: 4000               # Default: "4000"       | Local Server Port: Changes the port that the Jekyll server will run on 
+
+source: .                       # Default: "."          | GitHub Pages: <your pages repo>. Site Source: Changes the directory where Jekyll will look to transform files
+destination: ./_site            # Default: "./_site"    | GitHub Pages: <the build dir>. Site Destination: Changes the directory where Jekyll will write files to 
+plugins: ./_plugins             # Default: "./_plugins" | GitHub Pages: plugins not allowed. Site Plugins: Changes the directory where Jekyll will read plugin files from
+# baseurl: '/firemonkeyio'        # Might prove useful when GitHub Pages is hosting under the /firemonkeyio subfolder e.g. https://github.com/chrisjacob/firemonkeyio
+base-url: '/firemonkeyio'       # Default: "/"          | Base URL: Serve website from a given base URL
+
+future: true                    # Default: "true"       |
+lsi: false                      # Default: "false"      | GitHub Pages: "false". LSI: Produces an index for related posts. 
+pygments: true                  # Default: "false"      | GitHub Pages: "true". Pygments: Enables highlight tag with Pygments. 
+markdown: maruku                # Default: "maruku"     | Markdown: Uses RDiscount or [engine] instead of Maruku. 
+permalink: date                 # Default: "date"       | Permalink: Controls the URLs that posts are generated with. Please refer to the Permalinks page for more info. 
+
+#paginate:                       # Default: <none>       | Pagination: Splits your posts up over multiple subdirectories called “page2”, “page3”, … “pageN” 
+#exclude:                        # Default: <none>       | Exclude: A list of directories and files to exclude from the conversion 
+
+maruku:
+  use_tex: false
+  use_divs: false
+  png_engine: blahtex
+  png_dir: images/latex
+  png_url: /images/latex
+
+rdiscount:
+  extensions: []
+
+kramdown:
+  auto_ids: true,
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+  
+  coderay:
+    coderay_wrap: div
+    coderay_line_numbers: inline
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: style
