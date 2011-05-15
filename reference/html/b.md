@@ -1,6 +1,6 @@
 ---
 layout: default
-title: b.html test
+title: b.md test
 ---
 
 # {{ page.title }}
