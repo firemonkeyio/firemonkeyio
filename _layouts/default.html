@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>{{ page.title }}</title>
-    <meta name="author" content="Chris Jacob" />
-    
-    {% comment %} prevent forked repository GitHub Pages from getting indexed by search engines {% endcomment %}
-    {% if site.source != "/tmp/pages/firemonkeyio/firemonkeyio" %}
-        <!-- see: "Metadata Elements" http://noarchive.net/meta/ -->
-        <meta name="robots" content="noindex, nofollow, noarchive">
-        <meta name="googlebot" content="nosnippet">
-    {% endif %}
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>{{ page.title }}</title>
+   <meta name="author" content="Chris Jacob" />
 
-    <!-- syntax highlighting CSS -->
-    <link rel="stylesheet" href="{{ site.url }}/stylesheets/css/syntax.css" type="text/css" />
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="{{ site.url }}/stylesheets/css/syntax.css" type="text/css" />
+
 </head>
 <body>
 
 <div class="site">
   <div class="title">
-    <a href="{{ site.url }}/">FireMonkey.io</a>
+    <a href="{{ site.url }}/">Jekyll Boilerplate</a>
   </div>
   
   {{ content }}
   
 </div>
 
+<a href="http://github.com/chrisjacob/jekyll-boilerplate"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://assets2.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_red_aa0000.png&path=" alt="Fork me on GitHub"></a>
+
+{% if site.source == "/tmp/pages/firemonkeyio/firemonkeyio" %}
+    <p>Firemonkey!</p>
+{% else %}
+    <p>Forker!</p>
+{% endif %}
+
+baseurl: {{ site.baseurl }}
+
+base-url: {{ site.base-url }}
+
+site.url: {{ site.url }}
+page.url: {{ page.url }}
+
 <footer>
     <ul>
-        <li>site.time: {{ site.time }}</li> 
-        <li>site.url: {{ site.url }}</li>
-        
-        <li>page.url: {{ page.url }}</li>
-        <li>page.layout: {{ page.layout }}</li>
-        <li>page.title: {{ page.title }}</li>
-        
-        <li>post.url: {{ post.url }}</li>
-        <li>post.layout: {{ post.layout }}</li>
-        <li>post.title: {{ post.title }}</li>
-        <li>post.date: {{ post.date }}</li>
-        <li>post.id: {{ post.id }}</li>
-        <li>post.categories: {{ post.categories }}</li>
+    {% for item in site %}
+        <li>K: {{ item.key }}, V:{{ item.value }}..... {{ forloop.index }}: {{ forloop.name }}</li>
+    {% endfor %}
     </ul>
 </footer>
 
