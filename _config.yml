@@ -1,7 +1,7 @@
 # Custom Template Data
-url:                           # Custom                 | Site subfolder path - no trailing slash - e.g. <a href="{{ site.url }}/path/to/page"></a>
-#url: /firemonkeyio             #                       | Uncomment this line if hosting on GitHub Pages without a CNAME e.g. http://chrisjacob.github.com/firemonkeyio
-#base-url: /firemonkeyio        # Default: "/"          | Base URL: Serve website from a given base URL.
+url:                           # Custom                 | Site subfolder path - no trailing slash - e.g. <a href="{{ site.url }}/path/to/page/"></a>
+url: /firemonkeyio             #                       | Uncomment this line if hosting on GitHub Pages without a CNAME e.g. http://chrisjacob.github.com/firemonkeyio
+base-url: /firemonkeyio        # Default: "/"          | Base URL: Serve website from a given base URL.
 
 
 
@@ -21,7 +21,8 @@ future: true                    # Default: "true"       |
 lsi: false                      # Default: "false"      | GitHub Pages: "false". LSI: Produces an index for related posts. 
 pygments: true                  # Default: "false"      | GitHub Pages: "true". Pygments: Enables highlight tag with Pygments. 
 markdown: maruku                # Default: "maruku"     | Markdown: Uses RDiscount or [engine] instead of Maruku. 
-permalink: /:categories/:title  # Default: "date"       | Permalink: Controls the URLs that posts are generated with. See https://github.com/mojombo/jekyll/wiki/Permalinks 
+permalink: pretty               # Default: "date"       | Permalink: Controls the URLs that posts are generated with. See https://github.com/mojombo/jekyll/wiki/Permalinks
+                                #                       | Note: "pretty" appends a "/" at the end e.g. /path/to/page/. See: https://github.com/mojombo/jekyll/issues/39
 
 #paginate:                       # Default: <none>       | Pagination: Splits your posts up over multiple subdirectories called “page2”, “page3”, … “pageN” 
 #exclude:                        # Default: <none>       | Exclude: A list of directories and files to exclude from the conversion 
