@@ -1,6 +1,8 @@
 ---
+    ---
     layout: default
     title: b.md test
+    ---
 ---
 
 # {{ page.title }}
