@@ -9,7 +9,7 @@ server_port: 4000               # Default: "4000"       | Local Server Port: Cha
 source: .                       # Default: "."          | GitHub Pages: <your pages repo>. Site Source: Changes the directory where Jekyll will look to transform files
 destination: ./_site            # Default: "./_site"    | GitHub Pages: <the build dir>. Site Destination: Changes the directory where Jekyll will write files to 
 plugins: ./_plugins             # Default: "./_plugins" | GitHub Pages: plugins not allowed. Site Plugins: Changes the directory where Jekyll will read plugin files from
-base-url: '/firemonkeyio2'        # Default: "/"          | Base URL: Serve website from a given base URL. Uncomment this line when GitHub Pages is hosting under a subfolder e.g. "/firemonkeyio" in https://github.com/chrisjacob/firemonkeyio
+baseurl: '/firemonkeyio3'        # Default: "/"          | Base URL: Serve website from a given base URL. Uncomment this line when GitHub Pages is hosting under a subfolder e.g. "/firemonkeyio" in https://github.com/chrisjacob/firemonkeyio
 
 future: true                    # Default: "true"       |
 lsi: false                      # Default: "false"      | GitHub Pages: "false". LSI: Produces an index for related posts. 
