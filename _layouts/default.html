@@ -38,7 +38,7 @@ page.url: {{ page.url }}
 <footer>
     <ul>
     {% for item in site %}
-        <li>K: {{ item.key }}, V:{{ item.value }}..... {{ forloop.index }}: {{ item.name }}</li>
+        <li>{{ item }} ... K: {{ item.key }}, V:{{ item.value }}..... {{ forloop.index }}: {{ forloop.name }}</li> 
     {% endfor %}
     </ul>
 </footer>
