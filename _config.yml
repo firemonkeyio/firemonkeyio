@@ -1,7 +1,7 @@
 # Custom Template Data
 url:                           # Custom                 | Site subfolder path - no trailing slash - e.g. <a href="{{ site.url }}/path/to/page/"></a>
-url: /firemonkeyio             #                       | Uncomment this line if hosting on GitHub Pages without a CNAME e.g. http://chrisjacob.github.com/firemonkeyio
-base-url: /firemonkeyio        # Default: "/"          | Base URL: Serve website from a given base URL.
+#url: /firemonkeyio             #                       | Uncomment this line if hosting on GitHub Pages without a CNAME e.g. http://chrisjacob.github.com/firemonkeyio
+#base-url: /firemonkeyio        # Default: "/"          | Base URL: Serve website from a given base URL.
 
 
 

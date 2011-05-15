@@ -13,7 +13,7 @@
 
 <div class="site">
   <div class="title">
-    <a href="{{ site.baseurl }}/">Jekyll Boilerplate</a>
+    <a href="{{ site.url }}/">Jekyll Boilerplate</a>
   </div>
   
   {{ content }}
@@ -34,6 +34,14 @@ base-url: {{ site.base-url }}
 
 site.url: {{ site.url }}
 page.url: {{ page.url }}
+
+<footer>
+    <ul>
+    {% for item in site %}
+        <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
+</footer>
 
 
 </body>
