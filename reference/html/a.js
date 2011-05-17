@@ -1,6 +1,8 @@
 jsonpFireMonkeyIO({
-    "tag"       : "a",
-    "tagOpen"   : "<a>",
-    "tagClose"  : "</a>",
-    "tagName"   : "Anchor"
+    "tag"               : "a",
+    "tagOpen"           : "<a>",
+    "tagOpenEncoded"    : "&lt;a&gt;",
+    "tagClose"          : "</a>",
+    "tagCloseEncoded"   : "&lt;/a&gt;",
+    "tagName"           : "Anchor"
 });
