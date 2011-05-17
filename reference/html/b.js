@@ -1,1 +1,1 @@
-jsonpFireMonkeyIO({"Name": "Cheeso", "Id" : 1823, "Rank": 7});
+var jsonFireMonkeyIO = {"Name": "Cheeso", "Id" : 1823, "Rank": 7};
