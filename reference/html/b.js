@@ -1,1 +1,1 @@
-fireMonkeyJSONP({"Name": "Cheeso", "Id" : 1823, "Rank": 7});
+jsonpFireMonkeyIO({"Name": "Cheeso", "Id" : 1823, "Rank": 7});
